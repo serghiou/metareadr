@@ -12,7 +12,7 @@
 #'     ("pmc") downloads the whole text in XML format.
 #' @return Save the PubMed result as an XML file.
 #' @export
-meta_pmcoa <- function(pmcid, file, file_format = "pmc") {
+mt_read_pmcoa <- function(pmcid, file, file_format = "pmc") {
 
   base <- "https://www.ncbi.nlm.nih.gov/pmc/oai/oai.cgi?verb=GetRecord"
   identifier <- "&identifier=oai:pubmedcentral.nih.gov:"

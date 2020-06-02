@@ -7,7 +7,7 @@
 #' @param email Your email address, as a string.
 #' @return A tibble of all articles of interest and their fields.
 #' @export
-meta_unpaywall <- function(doi) {
+mt_unpaywall <- function(doi) {
 
   # TODO Make sure it does not exceed the API limit!
 
