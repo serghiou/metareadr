@@ -8,7 +8,7 @@
 #' @param n_max The maximum number of records to download, as an integer.
 #' @return Save the PubMed result as an XML file.
 #' @export
-mt_read_pubmed <- function(term, filename = "pubmed_info.xml", n_max = 10000) {
+mt_read_pubmed <- function(term, n_max = 10000) {
 
   esearch <- rentrez::entrez_search(
     db = "pubmed",
