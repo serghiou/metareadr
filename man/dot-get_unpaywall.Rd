@@ -7,9 +7,9 @@
 .get_unpaywall(doi, email = "sstelios@gmail.com")
 }
 \arguments{
-\item{email}{Your email address, as a string.}
+\item{doi}{A single DOI as a string.}
 
-\item{pubmed_xml}{A single DOI as a string.}
+\item{email}{Your email address, as a string.}
 }
 \value{
 A tibble of all articles of interest and their fields.

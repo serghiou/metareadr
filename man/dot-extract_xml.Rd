@@ -8,6 +8,8 @@
 }
 \arguments{
 \item{xml_doc}{The XML document as it was returned from xml2.}
+
+\item{xpath}{The XPath to the item of interest.}
 }
 \value{
 A string of interest.

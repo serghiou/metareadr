@@ -10,9 +10,6 @@ mt_read_pubmed(term, n_max = 10000)
 \item{term}{The search term, e.g. "meta-analysis[TITLE]", as a string.}
 
 \item{n_max}{The maximum number of records to download, as an integer.}
-
-\item{filename}{The name of the XML file to save as a string. If NULL, then
-this function simply returns the XML file as an xml_document.}
 }
 \value{
 Save the PubMed result as an XML file.

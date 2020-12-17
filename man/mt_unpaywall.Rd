@@ -7,9 +7,7 @@
 mt_unpaywall(doi)
 }
 \arguments{
-\item{pubmed_xml}{A DOI as a string or a vector of DOI strings.}
-
-\item{email}{Your email address, as a string.}
+\item{doi}{A DOI as a string or a vector of DOI strings.}
 }
 \value{
 A tibble of all articles of interest and their fields.
