@@ -1,11 +1,20 @@
 Package: metareadr
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Downloads data often needed for meta-research.
+Version: 0.2.0
+Authors@R: c(person("Stylianos", "Serghiou", role = c("aut", "cre"),
+                     email = "stelios.serghiou@gmail.com"))
+Description: It provides functions to easily download data often needed for
+    meta-research. Sources of such data include PubMed, PMC and Unpwaywall. It
+    also provides functions to take a random sample from PubMed and PMC and
+    functions to download PDFs of interest (if you have the link to the PDF).
+    Finally, it can automatically find an issue-match to a specific article.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/serghiou/metareadr
+Imports: 
+    dplyr,
+    magrittr,
+    xml2,
+RoxygenNote: 7.1.1
