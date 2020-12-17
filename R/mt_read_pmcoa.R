@@ -48,5 +48,5 @@ mt_read_pmcoa <- function(pmcid, file_name = NULL, file_format = "pmc") {
   }
 
   # Save
-  invisible(xml2::write_xml(pmc_record, paste0(file_name, ".xml")))
+  invisible(xml2::write_xml(pmc_record, file_name))
 }
