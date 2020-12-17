@@ -62,6 +62,7 @@ mt_extract_pubmed <- function(pubmed_xml, cl = 7) {
 #' Extract text of interest from an XML file.
 #'
 #' @param xml_doc The XML document as it was returned from xml2.
+#' @param xpath The XPath to the item of interest.
 #' @return A string of interest.
 .extract_xml <- function(xml_doc, xpath) {
 

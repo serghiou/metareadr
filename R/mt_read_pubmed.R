@@ -3,8 +3,6 @@
 #' Saves the meta-data of a PubMed query as an XML file.
 #'
 #' @param term The search term, e.g. "meta-analysis[TITLE]", as a string.
-#' @param filename The name of the XML file to save as a string. If NULL, then
-#'     this function simply returns the XML file as an xml_document.
 #' @param n_max The maximum number of records to download, as an integer.
 #' @return Save the PubMed result as an XML file.
 #' @export

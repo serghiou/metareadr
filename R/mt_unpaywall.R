@@ -3,8 +3,7 @@
 #' Extract all information held about an article on Unpaywall. Designed to not
 #'     exceed the appropriate API limit.
 #'
-#' @param pubmed_xml A DOI as a string or a vector of DOI strings.
-#' @param email Your email address, as a string.
+#' @param doi A DOI as a string or a vector of DOI strings.
 #' @return A tibble of all articles of interest and their fields.
 #' @export
 mt_unpaywall <- function(doi) {
@@ -25,7 +24,7 @@ mt_unpaywall <- function(doi) {
 
 #' Extract all information held about an article on Unpaywall.
 #'
-#' @param pubmed_xml A single DOI as a string.
+#' @param doi A single DOI as a string.
 #' @param email Your email address, as a string.
 #' @return A tibble of all articles of interest and their fields.
 .get_unpaywall <- function(doi, email = "sstelios@gmail.com") {

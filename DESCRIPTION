@@ -14,7 +14,14 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/serghiou/metareadr
 Imports: 
+    crminer,
     dplyr,
+    httr,
     magrittr,
-    xml2,
+    pbapply,
+    readr,
+    rentrez,
+    roadoi,
+    tibble,
+    xml2
 RoxygenNote: 7.1.1

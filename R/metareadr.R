@@ -4,4 +4,5 @@
 #'
 #' @importFrom magrittr %>%
 #' @importFrom magrittr %<>%
+#' @importFrom utils download.file
 "_PACKAGE"
