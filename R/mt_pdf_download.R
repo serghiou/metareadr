@@ -6,7 +6,7 @@
 #' @param name The name to be given to the file.
 #' @return Saves the PDF in the specified directory with the specified name.
 #' @export
-meta_download <- function(url, name) {
+mt_pdf_download <- function(url, name) {
 
   filename <- file.path("PDFs", paste0(name, ".pdf"))
 

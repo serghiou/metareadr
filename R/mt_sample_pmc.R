@@ -15,7 +15,7 @@
 #'     Journal Title, ISSN, eISSN, Year, Volume, Issue, Page and Date sampled.
 #'     Date sampled is in yyyy-mm-dd.
 #' @export
-meta_sample_pmc <- function(n = 1000,
+mt_sample_pmc <- function(n = 1000,
                             year_min = 2016,
                             year_max = 2020,
                             seed = NULL) {

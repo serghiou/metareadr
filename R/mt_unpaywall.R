@@ -28,7 +28,6 @@ mt_unpaywall <- function(doi) {
 #' @param pubmed_xml A single DOI as a string.
 #' @param email Your email address, as a string.
 #' @return A tibble of all articles of interest and their fields.
-#' @export
 .get_unpaywall <- function(doi, email = "sstelios@gmail.com") {
 
   # If no DOI, then return NA

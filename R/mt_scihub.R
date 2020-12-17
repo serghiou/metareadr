@@ -9,7 +9,7 @@
 #' @param filedir The name of the directory in which to save the file.
 #' @return Saves the PDF in the specified directory with the specified name.
 #' @export
-meta_scihub <- function(x, filename = NULL, filedir = "PDF_scihub") {
+mt_scihub <- function(x, filename = NULL, filedir = "PDF_scihub") {
 
   if (is.null(filename)) {
 
