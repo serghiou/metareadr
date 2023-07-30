@@ -30,19 +30,20 @@ mt_extract_pubmed <- function(pubmed_xml, cl = 7) {
   # Define the XPath for the fields of interest
   xpath_list <- list(
     pmid = "MedlineCitation/PMID",
-    doi = "PubmedData/ArticleIdList/ArticleId[@Idtype='doi']",
-    pmcid = "PubmedData/ArticleIdList/ArticleId[@Idtype='pmc']",
-    pii = "PubmedData/ArticleIdList/ArticleId[@Idtype='pii']",
+    doi = "PubmedData/ArticleIdList/ArticleId[@IdType='doi']",
+    pmcid = "PubmedData/ArticleIdList/ArticleId[@IdType='pmc']",
+    pii = "PubmedData/ArticleIdList/ArticleId[@IdType='pii']",
     title = "MedlineCitation/Article/ArticleTitle",
-    pub_date_year = "MedlineCitation/Article/Journal//PubDate/Year",
-    pub_date_month = "MedlineCitation/Article/Journal//PubDate/Month",
-    pub_date_day = "MedlineCitation/Article/Journal//PubDate/Day",
-    journal = "MedlineCitation/Article/Journal",
-    volume = "MedlineCitation/Article/Journal/JournalIssue/Volume",
-    issue = "MedlineCitation/Article/Journal/JournalIssue/Issue",
     abstract = "MedlineCitation/Article/Abstract",
+    publication_date_year = "MedlineCitation/Article/Journal//PubDate/Year",
+    publication_date_month = "MedlineCitation/Article/Journal//PubDate/Month",
+    publication_date_day = "MedlineCitation/Article/Journal//PubDate/Day",
+    journal_name = "MedlineCitation/Article/Journal/Title",
+    journal_name_iso = "MedlineCitation/Article/Journal/ISOAbbreviation",
+    journal_volume = "MedlineCitation/Article/Journal/JournalIssue/Volume",
+    journal_issue = "MedlineCitation/Article/Journal/JournalIssue/Issue",
     publication_type = "MedlineCitation/Article/PublicationTypeList/PublicationType",
-    mesh = "MedlineCitation/MeshHeadingList/MeshHeading/DescriptorName",
+    mesh_terms = "MedlineCitation/MeshHeadingList/MeshHeading/DescriptorName",
     reference_pmids = "PubmedData/ReferenceList//ArticleId[@IdType='pubmed']"
   )
 
